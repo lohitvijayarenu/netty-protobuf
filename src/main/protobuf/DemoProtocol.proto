@@ -1,0 +1,12 @@
+package org.demo.nettyprotobuf.proto;
+
+option optimize_for = SPEED;
+
+message DemoRequest {
+  optional string requestMsg = 1;
+}
+
+message DemoResponse {
+  optional uint32 ret = 1;
+  optional string responseMsg = 2;
+}
